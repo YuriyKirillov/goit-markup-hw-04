@@ -38,7 +38,7 @@
             </li>
             <li>
               <a
-                class="link-active"
+                class="link color-active"
                 href="https://yuriykirillov.github.io/goit-markup-hw-03/portfolio.html"
                 >Портфоліо</a
               >
@@ -49,14 +49,22 @@
 
         <ul class="list link-list">
           <li>
-            <a class="header-list-item" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="header-list-item" href="mailto:info@devstudio.com">
+              <svg class="contacts-icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope-hover"> </use>
+              </svg>
+              info@devstudio.com
+              </a>
+            
           </li>
           <li>
-            <a class="header-list-item" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <a class="header-list-item" href="tel:+380961111111">
+              <svg class="contacts-icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"> </use>
+              </svg>
+              +38 096 111 11 11
+              </a>
+           
           </li>
         </ul>
       </div>
@@ -86,7 +94,7 @@
           </ul>
 
           <ul class="list list-table">
-            <li>
+            <li class="list-table-shadow constant">
               <img
                 src="images/technokr.jpg"
                 alt="technokr"
@@ -98,7 +106,7 @@
                 <p class="group-list-text" lang="uk">Веб-сайт</p>
               </div>
             </li>
-            <li>
+            <li class="list-table-shadow">
               <img
                 src="images/poster.jpg"
                 alt="poster"
@@ -112,7 +120,7 @@
                 <p class="group-list-text" lang="uk">Дизайн</p>
               </div>
             </li>
-            <li>
+            <li class="list-table-shadow">
               <img
                 src="images/rest.jpg"
                 alt="restaurant"
@@ -124,7 +132,7 @@
                 <p class="group-list-text" lang="uk">Додаток</p>
               </div>
             </li>
-            <li>
+            <li class="list-table-shadow">
               <img
                 src="images/headphones.jpg"
                 alt="headphones"
@@ -136,7 +144,7 @@
                 <p class="group-list-text" lang="uk">Маркетинг</p>
               </div>
             </li>
-            <li>
+            <li class="list-table-shadow">
               <img
                 src="images/boxes.jpg"
                 alt="boxes"
@@ -148,7 +156,7 @@
                 <p class="group-list-text" lang="uk">Додаток</p>
               </div>
             </li>
-            <li>
+            <li class="list-table-shadow">
               <img
                 src="images/monitor.jpg"
                 alt="monitor"
@@ -162,7 +170,7 @@
                 <p class="group-list-text" lang="uk">Веб-сайт</p>
               </div>
             </li>
-            <li>
+            <li class="list-table-shadow">
               <img
                 src="images/magazine.jpg"
                 alt="magazine"
@@ -176,7 +184,7 @@
                 <p class="group-list-text" lang="uk">Дизайн</p>
               </div>
             </li>
-            <li>
+            <li class="list-table-shadow">
               <img
                 src="images/label.jpg"
                 alt="label"
@@ -188,7 +196,7 @@
                 <p class="group-list-text" lang="uk">Маркетинг</p>
               </div>
             </li>
-            <li>
+            <li class="list-table-shadow">
               <img
                 src="images/notebook.jpg"
                 alt="notebook"
@@ -206,32 +214,91 @@
     </main>
 
     <footer class="section footer-section">
-      <div class="container">
-        <div class="logo-footer">
-          <a class="logo-link-footer" href=""
-            >Web<span class="logo-span-footer">Studio</span>
-          </a>
+      <div class="container container-footer">
+        <div class="logo-contacts">
+          <div class="logo-footer">
+            <a class="logo-link-footer" href=""
+              >Web<span class="logo-span-footer">Studio</span>
+            </a>
+          </div>
+  
+          <address>
+            <ul class="list list-footer">
+              <li lang="uk" class="footer">
+                <a class="address-footer" href=""
+                  >бул. Леси Украинки, 26, Киев, 02000</a
+                >
+              </li>
+              <li class="footer">
+                <a class="link-footer" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer footer-zero">
+                <a class="link-footer" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
+        
+        <div class="social-network">
+          <h2 class="footer-text">приєднуйтесь</h2>
+          <ul class="socials list">
+            <li class="social-item">
+              <a class="social-link link footer-link" 
+              href="https://instagram.com"
+              target="_blank"
+              aria-label="Instagram"
+              rel="noopener noreferrer"
+              >
+             <svg class="social-icon footer-icon" width="20" height="20">
+              <use href="./images/icons.svg#instagram-2"></use>
+             </svg>
+            </a>
+            </li>
 
-        <address>
-          <ul class="list list-footer">
-            <li lang="uk" class="footer">
-              <a class="address-footer" href=""
-                >бул. Леси Украинки, 26, Киев, 02000</a
+            <li class="social-item">
+              <a class="social-link color-active-bg link" 
+              href="https://twitter.com"
+              target="_blank"
+              aria-label="Twitter"
+              rel="noopener noreferrer"
               >
+               <svg class="social-icon footer-icon" width="20" height="20">
+                <use href="./images/icons.svg#twitter-1"></use>
+               </svg>
+            </a>
             </li>
-            <li class="footer">
-              <a class="link-footer" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+
+            <li class="social-item">
+              <a class="social-link link footer-link" 
+              href="https://facebook.com"
+              target="_blank"
+              aria-label="Facebook"
+              rel="noopener noreferrer"
               >
+               <svg class="social-icon footer-icon" width="20" height="20">
+                <use href="./images/icons.svg#facebook-1"></use>
+               </svg>
+            </a>
             </li>
-            <li footer footer-zero>
-              <a class="link-footer" href="tel:+380961111111"
-                >+38 096 111 11 11</a
+
+            <li class="social-item">
+              <a class="social-link link footer-link" 
+              href="https://linkedin.com"
+              target="_blank"
+              aria-label="Linkedin"
+              rel="noopener noreferrer"
               >
+               <svg class="social-icon footer-icon" width="20" height="20">
+                <use href="./images/icons.svg#linkedin-1"></use>
+               </svg>
+            </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
